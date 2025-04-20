@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M Aravindhan | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 100vh;
+      width: 100%;
+      background: linear-gradient(45deg, #000000, #434343, #000000, #434343);
+      background-size: 400% 400%;
+      animation: waveBG 6s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      padding: 30px;
+      border-radius: 25px;
+      max-width: 700px;
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      animation: fadeInUp 1.5s ease forwards;
+      opacity: 0;
+      color: #fafafa;
+      text-align: center;
+      transform: translateY(50px);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    h1.shine {
+      font-size: 2.5rem;
+      background: linear-gradient(90deg, #f8d7a3, #f7c07b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* Make the text transparent to show the gradient */
+      color: #f8d7a3; /* Fallback color */
+      animation: shineText 3s ease-in-out infinite;
+    }
+
+    .card a {
+      color: #f8d7a3;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .card a:hover {
+      color: #fafafa;
+      text-shadow: 0 0 10px #f8d7a3;
+    }
+
+    .section {
+      margin-top: 20px;
+      text-align: left;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .section h2 {
+      color: #f8d7a3;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .section ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .section li, .section p {
+      color: #fafafa;
+      margin: 5px 0;
+      transition: transform 0.3s ease;
+    }
+
+    .section li:hover, .section p:hover {
+      transform: translateX(10px);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ffffff20;
+      border: 1px solid #ffffff60;
+      border-radius: 12px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffffff30;
+      transform: scale(1.05);
+    }
+
+    @keyframes waveBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes shineText {
+      0% { opacity: 1; }
+      50% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media screen and (max-width: 768px) {
+      .card {
+        max-width: 90%;
+        padding: 20px;
+      }
+      h1.shine {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="card">
+      <h1 class="shine">M Aravindhan</h1>
+      <p>Email: <a href="mailto:23urit003@aaacet.ac.in">23urit003@aaacet.ac.in</a></p>
+      <p>GitHub: <a href="https://github.com/Aravindhan-30" target="_blank">Aravindhan-30</a></p>
+      <a class="btn" href="#">Download Resume</a>
+
+      <div class="section">
+        <h2>About Me</h2>
+        <p>I’m a passionate student of Information Technology at AAA College of Engineering and Technology. With a deep interest in web development and creating digital solutions, my focus is on enhancing user experiences and building innovative platforms. I strive to keep learning and apply modern technologies to create a positive impact.</p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React.js (in Progress ) </li>
+          <li>Node.js (in Progress )</li>
+          
+          
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Languages Known</h2>
+        <ul>
+          <li>Tamil (Native)</li>
+          <li>English (Intermediate)</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Tourism Blockchain App</strong> - Blockchain-based transparent reviews and payments system for tourism.</li>
+          <li><strong>Personal Portfolio</strong> - A visually appealing, animated personal portfolio with a glass effect.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Certified in Web Development (Naan Mudhalvan)</li>
+          <li>Smart India Hackathon 2024 - Participant</li>
+          <li>NPTEL - Data Science for Engineers</li>
+          
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Participated for SIH 2024 prototype presentation</li>
+          <li>Finalist in Football match</li>
+          <li>Participated in many ideathons </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Interests</h2>
+        <ul>
+          <li>Web Designing</li>
+          <li>Multimedia</li>
+          <li>Editing</li>
+          <li>FootBall</li>
+          <li>Gaming</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Contact Me</h2>
+        <p>📧 23urit003@aaacet.ac.in</p>
+        <p>🌐 <a href="https://github.com/Aravindhan-30" target="_blank">GitHub Profile</a></p>
+        <p>📍 Rajapalayam, Tamil Nadu, India</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
